@@ -3,22 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>初遇Hexo | 小伍のBlog</title>
+  <title>七牛插件 | 小伍のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="小伍 の Blog" />
   
-  <meta name="description" content="百无聊赖的周末，昏昏沉沉…">
-<meta name="keywords" content="日志,心情">
+  <meta name="description" content="七牛插件安装插件‘npm install –save hexo-admin-qiniu hexo server -d open http://localhost:4000/admin/&amp;#39; 站点配置文件添加qiniu配置项七牛云存储仓库，请务必使用 “华东区” 服务器 !!! 获取七牛AK、SK等参考使用技巧中相关文章 admin:       qiniuCfg:     imageslim">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初遇Hexo">
-<meta property="og:url" content="/2018/03/18/初遇Hexo/index.html">
+<meta property="og:title" content="七牛插件">
+<meta property="og:url" content="/2018/03/25/qiniu插件/index.html">
 <meta property="og:site_name" content="小伍のBlog">
-<meta property="og:description" content="百无聊赖的周末，昏昏沉沉…">
-<meta property="og:updated_time" content="2018-03-18T14:08:50.900Z">
+<meta property="og:description" content="七牛插件安装插件‘npm install –save hexo-admin-qiniu hexo server -d open http://localhost:4000/admin/&amp;#39; 站点配置文件添加qiniu配置项七牛云存储仓库，请务必使用 “华东区” 服务器 !!! 获取七牛AK、SK等参考使用技巧中相关文章 admin:       qiniuCfg:     imageslim">
+<meta property="og:updated_time" content="2018-03-25T10:34:41.179Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初遇Hexo">
-<meta name="twitter:description" content="百无聊赖的周末，昏昏沉沉…">
+<meta name="twitter:title" content="七牛插件">
+<meta name="twitter:description" content="七牛插件安装插件‘npm install –save hexo-admin-qiniu hexo server -d open http://localhost:4000/admin/&amp;#39; 站点配置文件添加qiniu配置项七牛云存储仓库，请务必使用 “华东区” 服务器 !!! 获取七牛AK、SK等参考使用技巧中相关文章 admin:       qiniuCfg:     imageslim">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -122,20 +121,20 @@ ga('send', 'pageview');
     </div>
 </header>
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="post-初遇Hexo" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-qiniu插件" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="post-title" itemprop="name">
-      初遇Hexo
+      七牛插件
     </h1>
     <div class="post-title-bar">
       <ul>
           
         <li>
-          <i class="fa fa-calendar"></i>  2018-03-18
+          <i class="fa fa-calendar"></i>  2018-03-25
         </li>
         <li>
           <i class="fa fa-eye"></i>
@@ -151,12 +150,26 @@ ga('send', 'pageview');
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <p>百无聊赖的周末，昏昏沉沉…<br><a id="more"></a><br>看见DJ在搞个比较神奇的东西，凑上去看了看，是个用于简单制作博客的工具。在虚度了周六的时光后，终于耐不住寂寞也开始搞搞这玩意儿了，<br>慢慢地整个实验室都在搞这东西，虽然只有我的速度是最慢的，但能搞懂就不错了。</p>
-
+            <h1 id="七牛插件"><a href="#七牛插件" class="headerlink" title="七牛插件"></a>七牛插件</h1><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>‘npm install –save hexo-admin-qiniu</p>
+<p>hexo server -d</p>
+<p>open <a href="http://localhost:4000/admin/&#39;" target="_blank" rel="noopener">http://localhost:4000/admin/&#39;</a></p>
+<h2 id="站点配置文件添加qiniu配置项"><a href="#站点配置文件添加qiniu配置项" class="headerlink" title="站点配置文件添加qiniu配置项"></a>站点配置文件添加qiniu配置项</h2><p>七牛云存储仓库，请务必使用 “华东区” 服务器 !!!</p>
+<p>获取七牛AK、SK等参考使用技巧中相关文章</p>
+<pre><code>admin:
+      qiniuCfg:
+    imageslim: true  # 启动图片瘦身，仅华东区bucket可以使用            AccessKey: &apos;your qiniu AK&apos;
+    SecretKey: &apos;your qiniu SK&apos;
+    BucketName: &apos;your BK Name&apos;
+    bucketHost: &apos;you BK Host&apos;
+</code></pre><h2 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h2><pre><code>  deploy:
+type: git
+repo:
+  github: xxxxxxxxxxxx.git,master
+</code></pre>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年03月18日 22:08</p>
-        <p>原始链接： <a class="post-url" href="/2018/03/18/初遇Hexo/" title="初遇Hexo">/2018/03/18/初遇Hexo/</a></p>
+        <p>最后更新： 2018年03月25日 18:34</p>
+        <p>原始链接： <a class="post-url" href="/2018/03/25/qiniu插件/" title="七牛插件">/2018/03/25/qiniu插件/</a></p>
         <footer>
             <a href="">
                 <img src="/images/self.jpg" alt="Wwh">
@@ -213,7 +226,7 @@ ga('send', 'pageview');
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=/2018/03/18/初遇Hexo/&title=《初遇Hexo》 — 小伍のBlog&pic=../../images/self.jpg" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=/2018/03/25/qiniu插件/&title=《七牛插件》 — 小伍のBlog&pic=images/self.jpg" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -223,22 +236,22 @@ ga('send', 'pageview');
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=/2018/03/18/初遇Hexo/&title=《初遇Hexo》 — 小伍のBlog&source=百无聊赖的周末，昏昏沉沉…" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=/2018/03/25/qiniu插件/&title=《七牛插件》 — 小伍のBlog&source=小伍的博客" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=/2018/03/18/初遇Hexo/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=/2018/03/25/qiniu插件/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《初遇Hexo》 — 小伍のBlog&url=/2018/03/18/初遇Hexo/&via=" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《七牛插件》 — 小伍のBlog&url=/2018/03/25/qiniu插件/&via=" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=/2018/03/18/初遇Hexo/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=/2018/03/25/qiniu插件/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -248,7 +261,7 @@ ga('send', 'pageview');
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=/2018/03/18/初遇Hexo/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=/2018/03/25/qiniu插件/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -257,15 +270,6 @@ ga('send', 'pageview');
         <ul class="article-footer-menu">
             
             
-  <li class="article-footer-tags">
-    <i class="fa fa-tags"></i>
-      
-    <a href="/tags/日志/" class="color3">日志</a>
-      
-    <a href="/tags/心情/" class="color3">心情</a>
-      
-  </li>
-
         </ul>
         
     </footer>
@@ -273,22 +277,18 @@ ga('send', 'pageview');
 </article>
 
 
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#七牛插件"><span class="post-toc-text">七牛插件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装插件"><span class="post-toc-text">安装插件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#站点配置文件添加qiniu配置项"><span class="post-toc-text">站点配置文件添加qiniu配置项</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#发布文章"><span class="post-toc-text">发布文章</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
 
 <nav id="article-nav">
   
-    <a href="/2018/03/25/qiniu插件/" id="article-nav-newer" class="article-nav-link-wrap">
-
-      <span class="article-nav-title">
-        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
-        
-          七牛插件
-        
-      </span>
-    </a>
   
-  
-    <a href="/2018/03/18/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">Hello World</span>
+    <a href="/2018/03/18/初遇Hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">初遇Hexo</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
